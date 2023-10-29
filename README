@@ -2,3 +2,10 @@ Janet bindings for Linux implementation of pledge and unveil
 
 Linux pledge and unveil implementation taken from https://humungus.tedunangst.com/r/pledge
 which is in turn distilled from https://github.com/jart/pledge
+
+usage:
+(pledge/unveil "/foo/bar" "rwx")           # to add alowed path and permissions
+(pledge/unveil)                            # after the paths to lock and commit
+
+(pledge/pledge "stdio exec rpath" "stdio") # pledge with execpromises
+(pledge/pledge "stdio exec rpath")         # the execpromises argument is optional

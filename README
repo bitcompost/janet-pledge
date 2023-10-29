@@ -1,0 +1,4 @@
+Janet bindings for Linux implementation of pledge and unveil
+
+Linux pledge and unveil implementation taken from https://humungus.tedunangst.com/r/pledge
+which is in turn distilled from https://github.com/jart/pledge
